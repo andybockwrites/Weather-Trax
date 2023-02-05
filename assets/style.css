@@ -1,0 +1,21 @@
+.titleEl {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(68, 0, 95);
+    color: rgb(142, 195, 255);
+    height: 50px;
+    align-items: center;
+}
+
+/* .row.content {height: 550px}
+     
+/* Set gray background color and 100% height
+.sidenav {
+  background-color: #f1f1f1;
+  height: 100%;
+}
+    
+/* On small screens, set height to 'auto' for the grid
+@media screen and (max-width: 767px) {
+  .row.content {height: auto;} 
+} */
