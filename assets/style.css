@@ -1,3 +1,27 @@
+li {
+    list-style-type: none;
+}
+
+.scroll-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+}
+
+.searched-links {
+    margin-right: 20px;
+}
+
+.well {
+    color: white;
+    background-color:rgb(68, 0, 95)
+}
+
+h2 {
+    padding-left: 10px;
+}
+
 .titleEl {
     display: flex;
     justify-content: center;
@@ -5,7 +29,42 @@
     color: rgb(142, 195, 255);
     height: 50px;
     align-items: center;
+    /* background-image:
+        linear-gradient(
+            to left,
+            rgb(rgb(68, 0, 95), rgb(0, 2, 104))
+        ); */
 }
+
+.search-container {
+    width: 100%;
+}
+
+.search-button {
+    color: white;
+    background-color:rgb(68, 0, 95)
+}
+
+.five-day {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    padding-left: 40px;
+}
+
+#scroll-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#future-forecast {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 /* .row.content {height: 550px}
      
