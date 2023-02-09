@@ -23,7 +23,7 @@ When the user loads the page, they will see an example of a search, Orlando, and
 
 ## Screenshot
 
-![A user searches for weather data in different cities using the search input.](./Assets/Weather-Trax_screenshot.png)
+![A user searches for weather data in different cities using the search input.](./assets/Weather-Trax_screenshot.png)
 
 
 
