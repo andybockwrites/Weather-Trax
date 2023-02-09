@@ -1,7 +1,3 @@
-# Weather-Trax
-An interactive website that allows the user to search and plan ahead for weather patterns in different cities.
-
-
 # Work n' Flow: A Calendar App For Work Days
 
 ## Description
