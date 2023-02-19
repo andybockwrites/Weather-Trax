@@ -22,8 +22,9 @@ h2 {
     padding-left: 10px;
 }
 
-.titleEl {
+header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     background-color: rgb(68, 0, 95);
     color: rgb(142, 195, 255);

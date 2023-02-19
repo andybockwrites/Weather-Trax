@@ -18,7 +18,10 @@
 
    
     </nav>
-    <h1 class="titleEl mb-12">Weather Trax</h1>
+    <header>
+        <h1 class="titleEl mb-12">Weather Trax</h1>
+        <h4 id="currentDate"></h4>
+    </header>
     <div class="container-fluid">
     <div class="row content">
         <div class="col-sm-3 sidenav hidden-xs">
@@ -56,42 +59,42 @@
 
         <li class="sidenav-item text-center">
         <a class="sidenav-link">
-            <i class="far fa-smile pe-3" class="searched-links"></i><span>Link 1</span>
+            <i class="far fa-smile pe-3" class="past-searches"></i><span>Link 1</span>
         </a>
         </li>
         <li class="sidenav-item text-center">
         <a class="sidenav-link">
-            <i class="far fa-smile pe-3"></i><span class="searched-links">Link 2</span>
+            <i class="far fa-smile pe-3"></i><span class="past-searches">Link 2</span>
         </a>
         </li>
         <li class="sidenav-item text-center">
         <a class="sidenav-link">
-            <i class="far fa-smile pe-3"></i><span class="searched-links">Link 3</span>
+            <i class="far fa-smile pe-3"></i><span class="past-searches">Link 3</span>
         </a>
         </li>
         <li class="sidenav-item text-center">
         <a class="sidenav-link">
-            <i class="far fa-smile pe-3"></i><span class="searched-links">Link 4</span>
+            <i class="far fa-smile pe-3"></i><span class="past-searches">Link 4</span>
         </a>
         </li>
         <li class="sidenav-item text-center">
         <a class="sidenav-link">
-            <i class="far fa-smile pe-3"></i><span class="searched-links">Link 5</span>
+            <i class="far fa-smile pe-3"></i><span class="past-searches">Link 5</span>
         </a>
         </li>
         <li class="sidenav-item text-center">
         <a class="sidenav-link">
-            <i class="far fa-smile pe-3"></i><span class="searched-links">Link 6</span>
+            <i class="far fa-smile pe-3"></i><span class="past-searches">Link 6</span>
         </a>
         </li>
         <li class="sidenav-item text-center">
         <a class="sidenav-link">
-            <i class="far fa-smile pe-3"></i><span class="searched-links">Link 7</span>
+            <i class="far fa-smile pe-3"></i><span class="past-searches">Link 7</span>
         </a>
         </li>
         <li class="sidenav-item text-center">
         <a class="sidenav-link">
-            <i class="far fa-smile pe-3"></i><span class="searched-links">Link 8</span>
+            <i class="far fa-smile pe-3"></i><span class="past-searches">Link 8</span>
         </a>
         </li>
     </ul>
@@ -113,9 +116,9 @@
         <div class="well">
             <h3 id="searched-city">City<h3>
             <br>
-            <p id="todays-forcast">Temp</p>
-            <p id="todays-forcast">Wind</p>
-            <p id="todays-forcast">Humidity</p>
+            <p id="todays-temp">Temp</p>
+            <p id="todays-wind">Wind</p>
+            <p id="todays-humidity">Humidity</p>
         </div>
         <div class="five-day col-12 text-center">
             <h4>5-Day Forecast:</h4>
@@ -123,44 +126,48 @@
         <div id="future-forecast" class="row">
             <div class="col-sm-2">
             <div class="forecast well">
-                <h5>One Day</h5>
-                <p>Temp</p>
-                <p>Wind</p>
-                <p>Humidity</p> 
+                <h5 class="one-day-date">One Day</h5>
+                <p class="one-day-temp">Temp</p>
+                <p class="one-day-wind">Wind</p>
+                <p class="one-day-humidity">Humidity</p> 
             </div>
             </div>
             <div class="col-sm-2">
             <div class="forecast well">
-                <h5>Two Days</h5> 
-                <p>Temp</p>
-                <p>Wind</p>
-                <p>Humidity</p> 
+                <h5 class="two-days-date">Two Days</h5>
+                <p class="two-days-temp">Temp</p>
+                <p class="two-days-wind">Wind</p>
+                <p class="two-days-humidity">Humidity</p>
             </div>
             </div>
             <div class="col-sm-2">
             <div class="forecast well">
-                <h5>Three Days</h5>
-                <p>Temp</p>
-                <p>Wind</p>
-                <p>Humidity</p> 
+                <h5 class="three-days-date">Three Days</h5>
+                <p class="three-days-temp">Temp</p>
+                <p class="three-days-wind">Wind</p>
+                <p class="three-days-humidity">Humidity</p>
             </div>
             </div>
             <div class="col-sm-2">
             <div class="forecast well">
-                <h5>Four Days</h5>
-                <p>Temp</p>
-                <p>Wind</p>
-                <p>Humidity</p> 
+                <h5 class="four-days-date">Four Days</h5>
+                <p class="four-days-temp">Temp</p>
+                <p class="four-days-wind">Wind</p>
+                <p class="four-days-humidity">Humidity</p>
             </div>
             </div>
             <div class="col-sm-2">
-                <div class="forecast well">
-                    <h5>Five Days</h5>
-                    <p>Temp</p>
-                    <p>Wind</p>
-                    <p>Humidity</p> 
+            <div class="forecast well">
+                <h5 class="five-days-date">Five Days</h5>
+                <p class="five-days-temp">Temp</p>
+                <p class="five-days-wind">Wind</p>
+                <p class="five-days-humidity">Humidity</p>
         </div>
-    <script src="./assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"></script>
+    <script src="./assets/script.js"></script>
  </body>
  </html>
  
