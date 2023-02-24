@@ -100,7 +100,7 @@ function callAPI() {
     var getWeather = function() {
         
         // Input the Longitude and Latitude into the search perameters
-        fetch('https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&appid=8b2b86b55e8f31fc929569eb729b63ce')
+        fetch(weatherFetch)
         
         weatherImage = list.weather.icon;
         tempNow = list.main.temp.imperial;
