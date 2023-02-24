@@ -70,51 +70,51 @@ console.log(cityFetch);
 console.loge(weatherFetch);
 
 
-// function callAPI() {
+function callAPI() {
     
-//     cityFetchFunct(cityFetch) {
-//     fetchCity((response) => {
-//         console.log(cityFetch)
-//         if (response.ok) {
-//             response.json().then(function(data){
-//                 console.log(data)
-//                 getWeather(data);
-//             });
-//         }
-//         else {
-//             window.alert('Please enter a valid city.')
-//         };
-// })};
+    cityFetchFunct(cityFetch) {
+    fetchCity((response) => {
+        console.log(cityFetch)
+        if (response.ok) {
+            response.json().then(function(data){
+                console.log(data)
+                getWeather(data);
+            });
+        }
+        else {
+            window.alert('Please enter a valid city.')
+        };
+})};
     
-//     var getCity = function () {
-//         var queryString = document.location.search;
-//         var cityName = queryString.split()
-//         if (city) {
-//         searchInput.textContent = city;
+    var getCity = function () {
+        var queryString = document.location.search;
+        var cityName = queryString.split()
+        if (city) {
+        searchInput.textContent = city;
     
-//         getWeather(city)
+        getWeather(city)
         
-//         }
-//     };
+        }
+    };
 
-//     var getWeather = function() {
+    var getWeather = function() {
         
-//         // Input the Longitude and Latitude into the search perameters
-//         fetch('https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&appid=8b2b86b55e8f31fc929569eb729b63ce')
+        // Input the Longitude and Latitude into the search perameters
+        fetch('https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + lon + '&appid=8b2b86b55e8f31fc929569eb729b63ce')
         
-//         weatherImage = list.weather.icon;
-//         tempNow = list.main.temp.imperial;
-//         console.log(tempNow)
-//         windNow = list.wind.speed.imperial;
-//         humNow = list.main.humidity;
+        weatherImage = list.weather.icon;
+        tempNow = list.main.temp.imperial;
+        console.log(tempNow)
+        windNow = list.wind.speed.imperial;
+        humNow = list.main.humidity;
         
         
-//     }};
+    }};
     
-    // var weatherData = function (data) {
+    var weatherData = function (data) {
         
-        // }
+        }
         
-        // var cityName = data.results.name;
-        // var lat = data.results.lat;
-        // var lon = data.results.lon;
+        var cityName = data.results.name;
+        var lat = data.results.lat;
+        var lon = data.results.lon;
